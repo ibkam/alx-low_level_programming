@@ -20,7 +20,7 @@ int main(void)
 
 			if (var != 8)
 			{
-				putchar(';');
+				putchar(',');
 				putchar(' ');
 			}
 			else

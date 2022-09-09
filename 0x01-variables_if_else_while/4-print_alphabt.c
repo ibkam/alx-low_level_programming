@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - prints the alphabet in lowercase, expect q and e
@@ -12,9 +12,7 @@ int main(void)
 
 	for (var = 'a'; var <= 'z'; var++)
 	{
-		if (var == 'e' || var == 'q')
-			continue;
-
+		if (var != 'e' || var != 'q')
 			putchar(var);
 	}
 	putchar('\n');

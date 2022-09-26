@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _memcpy - fills the first n bytes of the memery 
+ * _memcpy - fills the first n bytes of the memery
  * @dest: pointer to the string dest
  * @src: pointer to the string src
  * @n: size in byte of a memory space

@@ -8,7 +8,7 @@
  */
 void _puts_recursion(char *s)
 {
-	if(strlen(s) < 1)
+	if (strlen(s) < 1)
 		_putchar('\n');
 	else
 	{

@@ -5,7 +5,7 @@
  * init_dog - initialize a variable of type struct dog
  * @d: pointer to variable struct dog
  * @name: character string to name
- * @float: interger to age
+ * @age: interger to age
  * @owner: character string to owner
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)

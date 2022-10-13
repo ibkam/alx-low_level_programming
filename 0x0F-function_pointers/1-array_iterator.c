@@ -3,9 +3,9 @@
 
 /**
  * array_iterator - execute function on each element of array
- * @array: pointer to an array
+ * @array: pointer to an array of element of type interger
  * @size : size of an array
- * @action: callback function
+ * @action: callback function pointing to another function
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))

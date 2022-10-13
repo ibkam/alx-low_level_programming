@@ -2,8 +2,8 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - execute function on each element of array
- * @array: pointer to an array of element of type interger
+ * array_iterator - function to act on an array of element
+ * @array: an array of element of type interger
  * @size : size of an array
  * @action: callback function pointing to another function
  */

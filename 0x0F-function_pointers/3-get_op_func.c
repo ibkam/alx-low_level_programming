@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * get_op_fun - select correct operation
+ * get_op_func - select correct operation
  * @s: operation to perform
  *
  * Return: pointer to the correct function
@@ -20,12 +20,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	i = 0;
-	while (ops[i].op != NULL)
+	while (ops[i].op)
 	{
-		if (strcmp, ops[i].op) == 0)
-			break;
+		if (*(ops[i].op) == *s)
+			return (ops[i].f);
 		i++;
 	}
-	return (ops[i].f);
+	return (NULL);
 }

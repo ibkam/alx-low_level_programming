@@ -28,7 +28,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	putchar('\n');
 	va_end(args);
-<<<<<<< HEAD
 }
-=======
->>>>>>> b447fea8b828ce28257f5b61adb4ba4251385e7d

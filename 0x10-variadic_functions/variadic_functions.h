@@ -12,8 +12,7 @@ typedef struct print
 {
 	char *t;
 	void (*f)(va_list);
-}
-print_t;
+} print_t;
 
 int sum_them_all(const unsigned int, ...);
 void print_numbers(const char *, const unsigned int, ...);

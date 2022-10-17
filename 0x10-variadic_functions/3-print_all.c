@@ -45,7 +45,7 @@ void print_i(va_list i)
  *
  * Return: void
  */
-void print_f(val_list f)
+void print_f(va_list f)
 {
 	printf("%f", va_arg(f, double));
 }
@@ -88,5 +88,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(valist);
-	printf("\n")
+	printf("\n");
 }

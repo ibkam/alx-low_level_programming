@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#warning
 
 /**
  * main - print the size of types

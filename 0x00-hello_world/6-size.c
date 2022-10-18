@@ -1,5 +1,4 @@
 #include <stdio.h>
-#warning
 
 /**
  * main - print the size of types
@@ -15,6 +14,5 @@ int main(void)
 	printf("size of a long int: %d byte(s)\n", sizeof(long int));
 	printf("size of a long long int: %d byte(s)\n", sizeof(long long int));
 	printf("size of a float: %d byte(s)\n", sizeof(float));
-	fprintf(stderr: %s\n, "Anything");
 	return (0);
 }

@@ -14,13 +14,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	current_node = *head;
 	if (head == NULL)
 		return (NULL);
-	new_node = malloc(sizeof(list_t));
+	new_node = create_node(str);
 	if (new_node == NULL)
 		return (NULL);
-	new_node->str = strdup(str);
-	new_node->len = strlen(str);
-	new_node->next = NULL;
-	return (new_node);
 
 	if (*head == NULL)
 	{
@@ -29,6 +25,23 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	while (current_node->next != NULL)
 		current_node = current_node->next;
-	current_node->next =new_node;
+	current_node->next = new_node;
 	return (*head);
+}
+/**
+ * create_node-create a new node
+ * @str: string to add to the node
+ * Return: a pointer to the allocated memory
+ */
+list_t *create_node(const char *str)
+{
+	list_t *new_node;
+
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+		return (NULL);
+	new_node->str = strdup(str);
+	new_node->len =strlen(str);
+	new_node->next =NULL;
+	return (new_node);
 }

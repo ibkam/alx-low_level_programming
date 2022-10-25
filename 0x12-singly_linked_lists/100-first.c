@@ -3,7 +3,7 @@
 void myStartupFun(void)__attribute__((constructor));
 
 /**
- * mystartupFun - Functions that are executed before main
+ * myStartupFun - function executed before main
  *
  */
 void myStartupFun(void)

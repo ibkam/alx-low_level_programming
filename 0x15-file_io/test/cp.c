@@ -67,6 +67,8 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
+
+
 	buffer = create_buffer(argv[2]);
 	file1 = open(argv[1], O_RDONLY);
 	r = read(file1, buffer, 1024);

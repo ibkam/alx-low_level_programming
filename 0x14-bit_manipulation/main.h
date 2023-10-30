@@ -5,3 +5,4 @@
 
 int _putchar(char);
 unsigned int binary_to_unint(const char *b);
+#endif

@@ -9,7 +9,7 @@
  * Return: converted number if successful, 0 otherwise
  */
 
-unsigned int binary_t_unint(const char *b)
+unsigned int binary_to_uint(const char *b);
 {
 	unsigned int base = 1;
 	unsigned int len = 0;

@@ -1,15 +1,20 @@
-#!/usr/bin/python3
-"""
-5-main
-"""
-island_perimeter = __import__('5-island_perimeter').island_perimeter
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
-if __name__ == "__main__":
-    grid = [
-        [0, 0, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0, 0],
-        [0, 1, 1, 1, 0, 0],
-        [0, 0, 0, 0, 0, 0]
-    ]
-    print(island_perimeter(grid))
+.PHONY: all clean oclean fclean re
+
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all 
